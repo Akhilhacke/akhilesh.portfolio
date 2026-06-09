@@ -33,3 +33,6 @@ Hosted on **Vercel** (or GitHub Pages). Auto-deploys on push to `main`.
 ## Local Development
 
 Open `index.html` directly in browser — no build step required.
+
+vercel link -- https://akhileshportfolio-rho.vercel.app/
+github.io link -- https://akhilhacke.github.io/akhilesh.portfolio/
