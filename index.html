@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akhilesh Kalme | Full-Stack Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="scene-3d"></div>
+
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">akhil<em>.</em>dev</a>
+      <ul class="nav-links">
+        <li class="glow-item"><a href="#about">About</a></li>
+        <li class="glow-item"><a href="#expertise">Services</a></li>
+        <li class="glow-item"><a href="#techstack">Stack</a></li>
+        <li class="glow-item"><a href="#my-work">Work</a></li>
+        <li class="glow-item"><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#expertise">Services</a>
+    <a href="#techstack">Stack</a>
+    <a href="#my-work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <aside class="social-sidebar">
+    <a href="https://github.com/Akhilhacke/Akhilhacke" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/akhilesh-kalme-30257b218" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/akhil_routes/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <span class="social-sidebar-line"></span>
+  </aside>
+
+  <main>
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-bg-main"></div>
+      <div class="hero-bg-accent"></div>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <span class="hero-label">Full-Stack Developer</span>
+        <h1>Crafting Digital <em>Experiences</em> That Matter</h1>
+        <p>Turning vision into digital reality. Building clean, high-performance websites and robust backend systems for fast-growing brands.</p>
+        <div class="hero-btns">
+          <a href="#my-work" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          Available for work
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-inner">
+          <div class="hero-photo-frame" data-tilt data-tilt-axis="y">
+            <div class="hero-photo hero-video">
+              <video src="akhil Image/akhil portfolio vid.mp4" alt="Akhilesh Kalme" autoplay muted loop playsinline></video>
+            </div>
+            <div class="hero-photo-ring"></div>
+          </div>
+          <div class="hero-accent-bar"></div>
+          <div class="hero-badge badge-1">
+            <i class="fas fa-code"></i>
+            50+ Projects
+          </div>
+          <div class="hero-badge badge-2">
+            <i class="fas fa-clock"></i>
+            3+ Years
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-bento">
+      <div class="about-bento-card about-bento-photo" data-tilt>
+        <div class="about-photo-inner">
+          <video src="akhil Image/Akhil about 1 vid.mp4" autoplay muted loop playsinline id="aboutVideo"></video>
+          <button class="about-video-sound" id="aboutSoundToggle" aria-label="Toggle sound">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <div class="about-photo-overlay">
+            <span>Available for work</span>
+          </div>
+        </div>
+        <div class="about-photo-accent"></div>
+      </div>
+
+      <div class="about-bento-card about-bento-bio">
+        <span class="about-greeting">Hello, I'm</span>
+        <h3 class="about-name">Akhilesh Kalme</h3>
+        <p>I am a Full-Stack Developer and Software Engineer dedicated to building clean, optimized, and secure web applications. With a strong foundation in both frontend aesthetics and backend architecture, I engineer full-scale products from scratch.</p>
+        <p>My approach is rooted in meticulous craftsmanship — ensuring clean code, automated optimization, and zero-compromise security. I thrive on solving complex technical challenges and setting up smooth development pipelines so that modern businesses can launch their visions without technical friction.</p>
+      </div>
+
+      <div class="about-bento-card about-bento-stats">
+        <div class="about-stat-item">
+          <span class="about-stat-num" data-count="50">0</span>
+          <span class="about-stat-label">Projects Delivered</span>
+        </div>
+        <div class="about-stat-item">
+          <span class="about-stat-num" data-count="3">0</span>
+          <span class="about-stat-label">Years Building</span>
+        </div>
+        <div class="about-stat-item">
+          <span class="about-stat-num" data-count="100">0</span>
+          <span class="about-stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+
+      <div class="about-bento-card about-bento-skills">
+        <h4>Core Technologies</h4>
+        <div class="about-skill">
+          <div class="about-skill-header">
+            <span>Frontend</span>
+            <span>95%</span>
+          </div>
+          <div class="about-skill-bar">
+            <div class="about-skill-fill" style="width:95%"></div>
+          </div>
+        </div>
+        <div class="about-skill">
+          <div class="about-skill-header">
+            <span>Backend</span>
+            <span>90%</span>
+          </div>
+          <div class="about-skill-bar">
+            <div class="about-skill-fill" style="width:90%"></div>
+          </div>
+        </div>
+        <div class="about-skill">
+          <div class="about-skill-header">
+            <span>DevOps</span>
+            <span>80%</span>
+          </div>
+          <div class="about-skill-bar">
+            <div class="about-skill-fill" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-bento-card about-bento-quote">
+        <i class="fas fa-quote-right"></i>
+        <p>Turning ambitious concepts into production-ready reality — one line of clean code at a time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="expertise" id="expertise">
+    <div class="section-header">
+      <span class="section-eyebrow">/ services</span>
+      <h2 class="section-title">What I Do</h2>
+      <p class="section-desc">Full-stack engineering from concept to deployment — I own the entire pipeline.</p>
+    </div>
+
+    <div class="services-bento">
+      <div class="services-card services-card-accent reveal">
+        <div class="services-card-bg"></div>
+        <div class="services-card-content">
+          <span class="services-card-num">01</span>
+          <div class="services-card-icon"><i class="fas fa-window-restore"></i></div>
+          <h3>Frontend Engineering</h3>
+          <p>Responsive, accessible interfaces built with modern frameworks. I turn designs into fluid experiences that load fast and feel natural across every device.</p>
+
+        </div>
+      </div>
+
+      <div class="services-card services-card-outline reveal">
+        <div class="services-card-content">
+          <span class="services-card-num">02</span>
+          <div class="services-card-icon"><i class="fas fa-server"></i></div>
+          <h3>Backend Architecture</h3>
+          <p>Scalable APIs, robust database design, and secure server logic. I build backends that handle growth without crumbling — clean, tested, and production-hardened.</p>
+
+        </div>
+      </div>
+
+      <div class="services-card services-card-outline reveal">
+        <div class="services-card-content">
+          <span class="services-card-num">03</span>
+          <div class="services-card-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Full-Stack Product Dev</h3>
+          <p>From blank canvas to shipped product. I architect, build, and deploy complete web applications — handling every layer so you don't need a team of five.</p>
+
+        </div>
+      </div>
+
+      <div class="services-card services-card-accent reveal">
+        <div class="services-card-bg"></div>
+        <div class="services-card-content">
+          <span class="services-card-num">04</span>
+          <div class="services-card-icon"><i class="fas fa-gauge-high"></i></div>
+          <h3>Performance & Security</h3>
+          <p>I optimise for speed and harden for safety — automated vulnerability scanning, encryption, caching strategies, and load optimisation baked into every build.</p>
+
+        </div>
+      </div>
+
+      <div class="services-card services-card-wide reveal">
+        <div class="services-card-content services-card-content-row">
+          <div class="services-wide-text">
+            <h3>Available for hire</h3>
+            <p>Looking for a developer who owns the full stack? Let's talk about your next project.</p>
+          </div>
+          <a href="#contact" class="services-wide-btn">Get in touch <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="techstack" id="techstack">
+    <div class="section-header">
+      <span class="section-eyebrow">/ toolkit</span>
+      <h2 class="section-title">Tech Stack & Tools</h2>
+      <p class="section-desc">The technologies I reach for to build, ship, and scale production applications.</p>
+    </div>
+
+    <div class="toolkit-bento">
+      <div class="toolkit-card toolkit-card-frontend reveal">
+        <div class="toolkit-card-label">
+          <i class="fas fa-palette"></i>
+          <span>Frontend</span>
+        </div>
+        <div class="toolkit-tags">
+          <span class="toolkit-tag">HTML5</span>
+          <span class="toolkit-tag">CSS3</span>
+          <span class="toolkit-tag">JavaScript</span>
+          <span class="toolkit-tag">React</span>
+          <span class="toolkit-tag">Tailwind</span>
+          <span class="toolkit-tag">Streamlit</span>
+        </div>
+      </div>
+
+      <div class="toolkit-card toolkit-card-backend reveal">
+        <div class="toolkit-card-label">
+          <i class="fas fa-server"></i>
+          <span>Backend</span>
+        </div>
+        <div class="toolkit-tags">
+          <span class="toolkit-tag">Python</span>
+          <span class="toolkit-tag">Django</span>
+          <span class="toolkit-tag">FastAPI</span>
+          <span class="toolkit-tag">Flask</span>
+          <span class="toolkit-tag">REST APIs</span>
+          <span class="toolkit-tag">Auth</span>
+        </div>
+      </div>
+
+      <div class="toolkit-card toolkit-card-database reveal">
+        <div class="toolkit-card-label">
+          <i class="fas fa-database"></i>
+          <span>Databases</span>
+        </div>
+        <div class="toolkit-tags">
+          <span class="toolkit-tag">PostgreSQL</span>
+          <span class="toolkit-tag">SQLite</span>
+          <span class="toolkit-tag">SQLAlchemy</span>
+          <span class="toolkit-tag">Django ORM</span>
+        </div>
+      </div>
+
+      <div class="toolkit-card toolkit-card-devops reveal">
+        <div class="toolkit-card-label">
+          <i class="fas fa-cloud-upload-alt"></i>
+          <span>DevOps</span>
+        </div>
+        <div class="toolkit-tags">
+          <span class="toolkit-tag">Git</span>
+          <span class="toolkit-tag">GitHub</span>
+          <span class="toolkit-tag">Vercel</span>
+          <span class="toolkit-tag">Heroku</span>
+          <span class="toolkit-tag">AWS</span>
+          <span class="toolkit-tag">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="toolkit-card toolkit-card-ai reveal">
+        <div class="toolkit-card-label">
+          <i class="fas fa-brain"></i>
+          <span>AI & Automation</span>
+        </div>
+        <div class="toolkit-tags">
+          <span class="toolkit-tag">OpenAI</span>
+          <span class="toolkit-tag">Gemini</span>
+          <span class="toolkit-tag">LLMs</span>
+          <span class="toolkit-tag">Agents</span>
+          <span class="toolkit-tag">Automation</span>
+        </div>
+      </div>
+
+      <div class="toolkit-card toolkit-card-security reveal">
+        <div class="toolkit-card-label">
+          <i class="fas fa-shield-halved"></i>
+          <span>Security</span>
+        </div>
+        <div class="toolkit-tags">
+          <span class="toolkit-tag">Encryption</span>
+          <span class="toolkit-tag">Vuln Scanning</span>
+          <span class="toolkit-tag">OWASP</span>
+          <span class="toolkit-tag">Hardening</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="my-work">
+    <div class="section-header">
+      <span class="section-eyebrow">/ portfolio</span>
+      <h2 class="section-title">My Work</h2>
+      <p class="section-desc">Production applications I've architected, built, and deployed from the ground up.</p>
+    </div>
+
+    <div class="projects-showcase">
+      <article class="project-card project-card-featured reveal">
+        <div class="project-card-img">
+          <div class="project-card-badge">Latest</div>
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop" alt="E-Commerce Platform">
+          <div class="project-card-overlay">
+            <a href="#" class="project-link"><span>Live Demo</span> <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="project-link"><span>Source Code</span> <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-tag">Full Stack</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>Full-featured online store with real-time inventory tracking, secure payment gateway, and an admin dashboard for managing orders, products, and customers.</p>
+          <div class="project-stack">
+            <span>Django</span>
+            <span>PostgreSQL</span>
+            <span>Stripe</span>
+            <span>HTML/CSS/JS</span>
+          </div>
+          <div class="project-results">
+            <div class="project-result">
+              <strong>99.9%</strong>
+              <span>Uptime</span>
+            </div>
+            <div class="project-result">
+              <strong>3x</strong>
+              <span>Faster Load</span>
+            </div>
+            <div class="project-result">
+              <strong>500+</strong>
+              <span>Orders/Month</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-img">
+          <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Task Manager">
+          <div class="project-card-overlay">
+            <a href="#" class="project-link"><span>Live Demo</span> <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="project-link"><span>Source Code</span> <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-tag">Full Stack</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Task Management System</h3>
+          <p>Kanban-style project management tool with drag-and-drop boards, real-time collaboration, user authentication, and role-based access control.</p>
+          <div class="project-stack">
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>JavaScript</span>
+            <span>REST API</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card-img">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Analytics Dashboard">
+          <div class="project-card-overlay">
+            <a href="#" class="project-link"><span>Live Demo</span> <i class="fas fa-arrow-right"></i></a>
+            <a href="#" class="project-link"><span>Source Code</span> <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-meta">
+            <span class="project-tag">Full Stack</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Analytics Dashboard</h3>
+          <p>Real-time data visualization dashboard with interactive charts, user behaviour tracking, custom report generation, and automated data pipeline integration.</p>
+          <div class="project-stack">
+            <span>Flask</span>
+            <span>SQLite</span>
+            <span>Chart.js</span>
+            <span>HTML/CSS/JS</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-header" style="text-align:center">
+      <span class="section-eyebrow">/ connect</span>
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-desc" style="margin:0 auto">Have a project in mind? Let's discuss how I can help bring it to life.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form class="contact-form" id="contactForm" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project type or idea">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Send message <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Akhilesh Kalme. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Services</a>
+        <a href="#my-work">Work</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
