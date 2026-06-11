@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-08T11:35:00.000Z",
+  "title": "Design System: Akhilesh Kalme — Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Deep Navy", "canonical": "oklch(0.22 0.055 255)", "tonalRamp": ["#0A0E1A", "#111626", "#1A2238", "#2A3550", "#3E4B6A", "#5A6888", "#7E8AA8", "#A8B2CC"] },
+      "accent": { "role": "secondary", "displayName": "Warm Gold", "canonical": "oklch(0.70 0.12 85)", "tonalRamp": ["#6B5420", "#8C6E2A", "#A88334", "#C49A3C", "#D4A843", "#E0B84F", "#E8C96A", "#F2DC8E"] },
+      "bg": { "role": "neutral", "displayName": "White", "canonical": "oklch(1 0 0)", "tonalRamp": ["#E8E8E8", "#F0F0F0", "#F5F5F5", "#FAFAFA", "#FCFCFC", "#FDFDFD", "#FEFEFE", "#FFFFFF"] },
+      "surface": { "role": "neutral", "displayName": "Surface", "canonical": "oklch(0.97 0.003 250)", "tonalRamp": ["#D0D2D6", "#DADCE0", "#E2E4E8", "#EAECEF", "#F0F1F4", "#F4F5F7", "#F8F9FA", "#FBFCFC"] },
+      "text": { "role": "neutral", "displayName": "Text", "canonical": "oklch(0.12 0.008 255)", "tonalRamp": ["#0A0A0B", "#0E0E10", "#121215", "#16161A", "#1C1D1F", "#28292D", "#383A3F", "#4C4E54"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only. Singular use — the largest and most authoritative type role." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles. Commands attention at the top of each content block." },
+      "title": { "displayName": "Title", "purpose": "Card titles, nav logo. Dense and immediately scannable." },
+      "body": { "displayName": "Body", "purpose": "Paragraph copy, descriptions, long-form content. Max width 65–75ch." },
+      "label": { "displayName": "Label", "purpose": "Section kickers, button text, tags, metadata. Always uppercase with wide tracking." }
+    },
+    "shadows": [
+      { "name": "ambient-low", "value": "0 1px 3px oklch(0 0 0 / 0.06)", "purpose": "Default card boundary shadow. Barely perceptible; edge definition, not depth." },
+      { "name": "elevated-medium", "value": "0 4px 16px oklch(0 0 0 / 0.08)", "purpose": "Hover state for work cards and interactive elements." },
+      { "name": "floating-high", "value": "0 8px 32px oklch(0 0 0 / 0.10)", "purpose": "Modal dialogs, popovers, about section photo." }
+    ],
+    "motion": [
+      { "name": "ease-spring", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Standard easing for all state transitions and hover effects." },
+      { "name": "duration-fast", "value": "0.2s", "purpose": "Button and small element transitions." },
+      { "name": "duration-normal", "value": "0.35s", "purpose": "Card hover, nav hide/show transitions." },
+      { "name": "duration-slow", "value": "0.6s", "purpose": "3D carousel item transitions, hero reveal." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary call-to-action. Warm gold background, deep navy text. Used for contact, download, and main actions.",
+      "html": "<button class=\"ds-btn-primary\">Get In Touch</button>",
+      "css": ".ds-btn-primary { font-family: 'Sora', sans-serif; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; background: #D4A843; color: #1A2238; padding: 12px 24px; border: none; border-radius: 12px; cursor: pointer; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary:hover { background: #E0B84F; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #1A2238; outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline button for secondary actions. Transparent with border.",
+      "html": "<button class=\"ds-btn-secondary\">View Work</button>",
+      "css": ".ds-btn-secondary { font-family: 'Sora', sans-serif; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; background: transparent; color: #1C1D1F; padding: 12px 24px; border: 1.5px solid #DEE1E4; border-radius: 12px; cursor: pointer; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-secondary:hover { border-color: #1A2238; color: #1A2238; } .ds-btn-secondary:focus-visible { outline: 2px solid #1A2238; outline-offset: 2px; }"
+    },
+    {
+      "name": "Skill Card",
+      "kind": "card",
+      "refersTo": "skill-card",
+      "description": "Individual skill/technology display card. Icon + heading + description. Floats on hover with medium shadow.",
+      "html": "<div class=\"ds-skill-card\"><div class=\"ds-skill-icon\">⚡</div><h3>React</h3><p>Building interactive UIs with modern React patterns, hooks, and state management.</p></div>",
+      "css": ".ds-skill-card { background: #F4F5F7; border: 1px solid #DEE1E4; border-radius: 12px; padding: 28px; transition: box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-skill-card:hover { box-shadow: 0 4px 16px oklch(0 0 0 / 0.08); } .ds-skill-icon { font-size: 28px; margin-bottom: 12px; } .ds-skill-card h3 { font-family: 'Sora', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; color: #1C1D1F; } .ds-skill-card p { font-family: 'Manrope', sans-serif; font-size: 0.85rem; line-height: 1.6; color: #63666A; }"
+    },
+    {
+      "name": "Work Card",
+      "kind": "card",
+      "refersTo": "work-card",
+      "description": "Portfolio project card with image, overlay, tags, description, and tech stack links.",
+      "html": "<div class=\"ds-work-card\"><div class=\"ds-work-card-img\"><img src=\"https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80\" alt=\"Project screenshot\"><div class=\"ds-work-overlay\"><a href=\"#\" class=\"ds-work-link\">Live Demo</a><a href=\"#\" class=\"ds-work-link\">GitHub</a></div></div><div class=\"ds-work-body\"><span class=\"ds-work-tag\">Featured</span><h3>Project Name</h3><p>Short project description highlighting what was built.</p><div class=\"ds-work-stack\"><span>React</span><span>Node.js</span><span>MongoDB</span></div></div></div>",
+      "css": ".ds-work-card { background: #FCFDFD; border: 1px solid #DEE1E4; border-radius: 12px; overflow: hidden; transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-work-card:hover { box-shadow: 0 8px 32px oklch(0 0 0 / 0.10); } .ds-work-card-img { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #EDEEF0; } .ds-work-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); } .ds-work-card:hover .ds-work-card-img img { transform: scale(1.03); } .ds-work-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.75); display: flex; align-items: center; justify-content: center; gap: 12px; opacity: 0; transition: opacity 0.3s; } .ds-work-card:hover .ds-work-overlay { opacity: 1; } .ds-work-link { color: white; font-size: 0.8rem; font-weight: 600; padding: 8px 18px; border: 1px solid rgba(255,255,255,0.25); border-radius: 50px; text-decoration: none; transition: background 0.2s; } .ds-work-link:hover { background: rgba(255,255,255,0.1); } .ds-work-body { padding: 20px 24px; } .ds-work-tag { font-family: 'Sora', sans-serif; font-size: 0.7rem; font-weight: 600; color: #1A2238; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: inline-block; } .ds-work-body h3 { font-family: 'Sora', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; color: #1C1D1F; } .ds-work-body p { font-family: 'Manrope', sans-serif; font-size: 0.85rem; color: #63666A; line-height: 1.6; margin-bottom: 12px; } .ds-work-stack { display: flex; gap: 6px; flex-wrap: wrap; } .ds-work-stack span { font-family: 'Manrope', sans-serif; font-size: 0.75rem; font-weight: 500; color: #1A2238; background: #E8EAF0; padding: 3px 10px; border-radius: 50px; }"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Fixed top navigation with logo, links, and mobile hamburger. Transparent to blurred on scroll.",
+      "html": "<nav class=\"ds-nav\"><div class=\"ds-nav-inner\"><a href=\"#\" class=\"ds-nav-logo\">Akhilesh.</a><div class=\"ds-nav-links\"><a href=\"#\">Work</a><a href=\"#\">Skills</a><a href=\"#\">About</a><a href=\"#\">Contact</a></div><button class=\"ds-nav-toggle\" aria-label=\"Menu\"><span></span><span></span><span></span></button></div></nav>",
+      "css": ".ds-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 24px; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s, background 0.3s; } .ds-nav.scrolled { background: oklch(1 0 0 / 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 14px 24px; } .ds-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; } .ds-nav-logo { font-family: 'Sora', sans-serif; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.8px; color: #1A2238; text-decoration: none; } .ds-nav-links { display: flex; gap: 28px; } .ds-nav-links a { font-family: 'Sora', sans-serif; font-size: 0.85rem; font-weight: 500; color: #1A2238; text-decoration: none; padding-bottom: 4px; border-bottom: 1px solid transparent; transition: border-color 0.2s; } .ds-nav-links a:hover { border-bottom-color: #1A2238; } .ds-nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 4px; padding: 4px; } .ds-nav-toggle span { width: 22px; height: 2px; background: #1A2238; border-radius: 2px; transition: transform 0.3s; } @media (max-width: 768px) { .ds-nav-links { display: none; } .ds-nav-toggle { display: flex; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dynamic Developer Canvas",
+    "overview": "A portfolio that communicates technical mastery through its own execution. The design is modern and creative without being frivolous — every 3D effect, every motion, every layout choice exists to prove the developer's capability. The deep navy primary and warm gold accent signal confidence and premium taste, while generous whitespace and clean typography keep the focus on the work.\n\nThis system explicitly rejects generic templated portfolios and gimmicky tech demos.",
+    "keyCharacteristics": ["Bold typography with tight letter-spacing for confident headlines", "Warm gold accent against deep navy for a premium, distinctive pair", "Subtle 3D depth (tilt, glow, scroll parallax) that feels native, not bolted on", "Clean, card-based layout with consistent rounded corners (12px)", "Purposeful motion — every transition serves clarity or hierarchy"],
+    "rules": [
+      { "name": "The Accent Sparing Rule", "body": "Warm gold is used on ≤15% of any given screen. Its rarity makes it pop. Never flood a surface with the accent.", "section": "colors" },
+      { "name": "The Navy Authority Rule", "body": "Deep navy is the anchor. It grounds headlines, nav, and key interactive elements. Never replace it with a lighter blue.", "section": "colors" },
+      { "name": "The Display-Only Rule", "body": "The display size (3.5rem) is reserved exclusively for the hero headline. No other heading uses this scale. Its singularity is the point.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. Shadows appear only as a response to state (hover, elevation, focus).", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use the Warm Gold accent sparingly — it should feel like a reward, not wallpaper.",
+      "Do let Deep Navy dominate headlines, nav, and key interactive text.",
+      "Do use 3D effects (tilt, parallax, glow) to reinforce hierarchy, not distract from content.",
+      "Do keep card surfaces flat at rest — let the content breathe.",
+      "Do use the full 3.5rem display size only in the hero section.",
+      "Do maintain generous whitespace between sections (100px padding).",
+      "Do use Sora for all headings and Manrope for body copy consistently."
+    ],
+    "donts": [
+      "Don't use generic templated portfolio patterns or Bootstrap-like layouts.",
+      "Don't create gimmicky 3D that feels like a tech demo rather than a professional presentation.",
+      "Don't use skeleton loaders, 'under construction' pages, or half-baked states.",
+      "Don't use dark mode with purple gradients, neon accents, or glassmorphism.",
+      "Don't autoplay audio or use intrusive popups.",
+      "Don't use the accent color for large background areas — it loses its pop.",
+      "Don't use body fonts for headings or heading fonts for long-form body text.",
+      "Don't use border-left greater than 1px as a colored decorative stripe.",
+      "Don't use uppercase for body copy; reserve it for labels and short metadata."
+    ]
+  }
+}
